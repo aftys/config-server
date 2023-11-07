@@ -1,0 +1,21 @@
+# application.yml
+
+server:
+  port: 8080
+
+spring:
+  application:
+    name: my-service
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/mydb
+    username: dbuser
+    password: dbpass
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+test:
+  name: oussama aftys 
+
