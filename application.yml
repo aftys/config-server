@@ -17,5 +17,5 @@ spring:
       ddl-auto: update
     show-sql: true
 test:
-  name: oussama aftys 
+  name: oussama aftys 2² 
 
