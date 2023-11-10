@@ -1,5 +1,5 @@
 server:
-  port: 9095
+  port: 8080
 
 eureka:
   client:
@@ -10,3 +10,15 @@ eureka:
   instance:
     hostname: localhost
     prefer-ip-address: true
+cloud:
+  gateway:
+    routes:
+      - id: users_route
+        uri: lb://USERS
+        predicates:
+          - Path=/users/**
+      
+      - id: notifications_route
+        uri: lb://NOTIFICATIONS
+        predicates:
+          - Path=/notifications/**
