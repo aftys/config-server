@@ -20,6 +20,6 @@ cloud:
           - Path=/users/**
       
       - id: notifications_route
-        uri: lb://NOTIFICATIONS
+        uri: lb://notifications
         predicates:
           - Path=/notifications/**
