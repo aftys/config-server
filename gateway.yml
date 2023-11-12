@@ -9,7 +9,7 @@ eureka:
     prefer-ip-address: true
 
 server:
-  port: 9095
+  port: 8080
 
 cloud:
   gateway:
