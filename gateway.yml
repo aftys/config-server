@@ -7,6 +7,9 @@ eureka:
   instance:
     hostname: localhost
     prefer-ip-address: true
+spring:
+  application:
+    name: gateway
 
 server:
   port: 8080
@@ -19,7 +22,7 @@ cloud:
         predicates:
           - Path=/users/**
       
-      - id: notifications_route
+      - id: notifications
         uri: lb://notifications
         predicates:
           - Path=/notifications/**
